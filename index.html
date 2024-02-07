@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            h1{
+                  display: inline-block;
+                  width: 90px;
+            }
+            .container{
+                  margin-left: 50px;
+                  border: 2px solid black;
+                  width: 400px;
+                  padding: 20px;
+                  border-radius: 10px;
+            }
+            #buttons>h1{
+                  border: 2px solid red;
+                  border-radius: 7px;
+            }
+            #start,#stop,#reset{
+                  border-radius: 5px;
+                  padding: 5px;
+                  margin-right: 10px;
+            }
+      </style>
+</head>
+<body>
+      <div class="container">
+      <h1 >stopwatch</h1>
+<div id="buttons" >
+      <h1 id="hr">0 : </h1> 
+      <h1 id="min">0 : </h1>  
+      <h1 id="sec">0 : </h1> 
+      <h1 id="msec">0 : </h1>
+      <br> <br>
+      <button id="start" onclick="start()">start</button>
+      <button id="stop" onclick="stop()">stop</button>
+      <button id="reset" onclick="reset()">reset</button>
+</div>
+</div>
+      <script src="app.js"></script>
+</body>
+</html>
